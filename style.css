@@ -476,6 +476,7 @@ div.grid-items .grid-item:last-child {
 }
 div.grid-items .grid-item #quote-box {
   background-color: #824120;
+  border: solid 1px #5c2e1b;
   padding: 10px 15px;
   color: white;
   margin-bottom: 20px;
@@ -514,53 +515,27 @@ div.grid-items .grid-item-big .video-wrapper iframe {
   width: 100%;
 }
 
-.accordion {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  margin: 0 0 1.5em 0;
-  padding: 0;
+/**
+ * Rental Buttons/Divs
+ */
+div#buy-rent-list-items {
+  margin-top: 50px;
 }
-.accordion ul {
-  margin: 0;
-  padding: 0;
+div#buy-rent-list-items ul.buy-rent-list-items li.buy-rent-list-item {
+  background-color: #824120;
+  border: solid 1px #5c2e1b;
+  margin: 5px 0;
+  padding: 10px;
 }
-.accordion li {
-  border-bottom: 1px solid #ddd;
-  list-style: none;
+div#buy-rent-list-items ul.buy-rent-list-items li.buy-rent-list-item a {
+  color: white;
 }
-.accordion li > a {
-  color: #333;
-  display: block;
-  padding: 0.75em 1.618em;
-  text-decoration: none;
-}
-.accordion li > a .right-arrow {
+div#buy-rent-list-items ul.buy-rent-list-items li.buy-rent-list-item a span.right-arrow {
   float: right;
-  font-weight: 700;
-  font-size: 18px;
 }
-.accordion li:last-child {
-  border: none;
-}
-.accordion li:focus, .accordion li:hover {
-  background-color: #fcfcfc;
-}
-.accordion ul.submenu {
-  display: none;
-}
-.accordion ul.submenu li {
-  background-color: #eaeaea;
-}
-.accordion ul.submenu li:first-child {
-  border-top: 1px solid #ddd;
-  box-shadow: inset 0 1px 1px #dadada;
-}
-.accordion ul.submenu li:focus, .accordion ul.submenu li:hover {
-  background-color: #efefef;
-}
-.accordion .is-expanded {
-  display: block;
-  padding-bottom: 0;
+div#buy-rent-list-items ul.buy-rent-list-items li.buy-rent-list-item:hover {
+  background-color: #aaa;
+  border: solid 1px #ccc;
 }
 
 /**
@@ -572,6 +547,7 @@ section#landing-more-info-section {
 section#landing-more-info-section .side-image {
   background: #F9F9F9;
   min-height: 200px;
+  border: 1px solid #ccc;
 }
 @media screen and (min-width: 900px) {
   section#landing-more-info-section .side-image {
@@ -582,9 +558,8 @@ section#landing-more-info-section .side-image {
 }
 section#landing-more-info-section .side-image .images-wrapper {
   background: url("img/book-placeholder.jpg") no-repeat center;
-  background-color: #B5EBEB;
+  background-color: none;
   background-size: cover;
-  border-bottom: 1px solid rgba(38, 74, 38, 0.2);
   display: block;
   min-height: 12em;
   padding: 3em;
@@ -603,6 +578,7 @@ section#landing-more-info-section .side-image .side-image-content {
   display: table-cell;
   width: 100%;
   padding: 1em 1em 4em 1em;
+  position: relative;
 }
 @media screen and (min-width: 900px) {
   section#landing-more-info-section .side-image .side-image-content {
@@ -625,7 +601,12 @@ section#landing-more-info-section .side-image .side-image-content h4 {
 section#landing-more-info-section .side-image .side-image-content p {
   color: #333;
   line-height: 1.5;
-  margin-bottom: 3em;
+  margin-bottom: 10px;
+}
+section#landing-more-info-section .side-image .side-image-content button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 /**
