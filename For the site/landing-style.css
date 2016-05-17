@@ -4,12 +4,11 @@
  * Enqueue in functions.php
  *===================================================================
  */
-
 /**
  * Wrap
  */
 div.landing-wrap {
-    background: url("http://worldlyholiness.com/wp-content/uploads/2016/05/leatherbg-min.jpg") no-repeat fixed;
+    background: url("img/leatherbg-min.jpg") no-repeat fixed;
     background-size: 100%;
     padding: 0 100px;
 }
@@ -17,6 +16,10 @@ div.landing-wrap {
 /**
  * Heading section
  */
+#title-image {
+    max-width: 80%;
+}
+
 #landing-header {
     text-align: center;
 }
@@ -198,24 +201,6 @@ section#landing-more-info-section .side-image .side-image-content button {
     position: absolute;
     bottom: 10px;
     right: 10px;
-
-    background-color: #1565c0;
-    border: 0;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Lato" sans-serif;
-    font-size: 1em;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 600;
-    line-height: 1;
-    padding: 0.75em 1.5em;
-    text-decoration: none;
-    transition: background-color 150ms ease;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
 }
 
 /**

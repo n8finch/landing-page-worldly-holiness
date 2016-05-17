@@ -426,6 +426,10 @@ div.landing-wrap {
 /**
  * Heading section
  */
+#title-image {
+  max-width: 80%;
+}
+
 #landing-header {
   text-align: center;
 }

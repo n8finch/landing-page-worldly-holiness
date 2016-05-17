@@ -25,6 +25,7 @@
 <?php
 
 //Get all the custom fields!
+$title_image           = get_field( 'title_image' );
 $page_title            = get_field( 'page_title' );
 $page_subtitle         = get_field( 'page_subtitle' );
 $background_image      = get_field( 'background_image' );
@@ -67,8 +68,10 @@ $video_link       = get_field( 'video_link' );
 	<!-- HEADER SECTION -->
 
 	<header id="landing-header">
-		<h1><?php echo $page_title; ?></h1>
-		<p><?php echo $page_subtitle; ?></p>
+		<!-- <h1><?php echo $page_title; ?></h1>
+        <p><?php echo $page_subtitle; ?></p> -->
+
+		<img id="title-image" src="<?php echo $title_image; ?>" alt="<?php echo $page_title; ?>">
 	</header>
 
 	<!-- MORE MAIN SECTION -->
