@@ -119,38 +119,44 @@ $video_link       = get_field( 'video_link' );
 		<div class="grid-items">
 
 			<div class="grid-item">
-				<div class="side-image">
-					<div class="images-wrapper" style="background-image: url('<?php echo $info_box_image_1 ?>');"></div>
-					<div class="side-image-content">
-						<h3><?php echo $info_box_title_1; ?></h3>
-						<p><?php echo $info_box_text_1; ?></p>
-						<a href="<?php echo $info_box_link_1; ?>">
-							<button><?php echo $info_box_button_text_1; ?></button>
-						</a>
+				<div class="hover-tile-outer" style="background-image: url('<?php echo $info_box_image_1 ?>');">
+					<div class="hover-tile-container">
+						<div class="hover-tile hover-tile-visible"></div>
+						<div class="hover-tile hover-tile-hidden">
+							<h3><?php echo $info_box_title_1; ?></h3>
+							<p><?php echo $info_box_text_1; ?></p>
+							<a href="<?php echo $info_box_link_1; ?>">
+								<button><?php echo $info_box_button_text_1; ?></button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="grid-item">
-				<div class="side-image">
-					<div class="images-wrapper" style="background-image: url('<?php echo $info_box_image_2 ?>');"></div>
-					<div class="side-image-content">
-						<h3><?php echo $info_box_title_2; ?></h3>
-						<p><?php echo $info_box_text_2; ?></p>
-						<a href="<?php echo $info_box_link_2; ?>">
-							<button><?php echo $info_box_button_text_2; ?></button>
-						</a>
+				<div class="hover-tile-outer" style="background-image: url('<?php echo $info_box_image_2 ?>');">
+					<div class="hover-tile-container">
+						<div class="hover-tile hover-tile-visible"></div>
+						<div class="hover-tile hover-tile-hidden">
+							<h3><?php echo $info_box_title_2; ?></h3>
+							<p><?php echo $info_box_text_2; ?></p>
+							<a href="<?php echo $info_box_link_2; ?>">
+								<button><?php echo $info_box_button_text_2; ?></button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="grid-item">
-				<div class="side-image">
-					<div class="images-wrapper" style="background-image: url('<?php echo $info_box_image_3 ?>');"></div>
-					<div class="side-image-content">
-						<h3><?php echo $info_box_title_3; ?></h3>
-						<p><?php echo $info_box_text_3; ?></p>
-						<a href="<?php echo $info_box_link_3; ?>">
-							<button><?php echo $info_box_button_text_3; ?></button>
-						</a>
+				<div class="hover-tile-outer" style="background-image: url('<?php echo $info_box_image_3 ?>');">
+					<div class="hover-tile-container">
+						<div class="hover-tile hover-tile-visible"></div>
+						<div class="hover-tile hover-tile-hidden">
+							<h3><?php echo $info_box_title_3; ?></h3>
+							<p><?php echo $info_box_text_3; ?></p>
+							<a href="<?php echo $info_box_link_3; ?>">
+								<button><?php echo $info_box_button_text_3; ?></button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
