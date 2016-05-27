@@ -479,8 +479,8 @@ div.grid-items .grid-item:last-child {
   margin-right: 0;
 }
 div.grid-items .grid-item #quote-box {
-  background-color: #824120;
-  border: solid 1px #5c2e1b;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid 1px #ffffff;
   padding: 10px 15px;
   color: white;
   margin-bottom: 20px;
@@ -493,6 +493,9 @@ div.grid-items .grid-item #quote-box .quote-text {
 div.grid-items .grid-item #quote-box h4 {
   font-size: 14px;
   text-align: right;
+}
+div.grid-items .grid-item #quote-box * {
+  background: none;
 }
 div.grid-items .grid-item-big {
   float: left;
@@ -519,6 +522,14 @@ div.grid-items .grid-item-big .video-wrapper iframe {
   width: 100%;
 }
 
+.easy_t_single_testimonial blockquote p span.testimonial-client {
+  color: white;
+}
+
+blockquote.easy_testimonial p {
+  text-align: center;
+}
+
 /**
  * Rental Buttons/Divs
  */
@@ -526,8 +537,8 @@ div#buy-rent-list-items {
   margin-top: 50px;
 }
 div#buy-rent-list-items ul.buy-rent-list-items li.buy-rent-list-item {
-  background-color: #824120;
-  border: solid 1px #5c2e1b;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid 1px #ffffff;
   margin: 5px 0;
   padding: 10px;
 }
@@ -615,8 +626,8 @@ section#landing-more-info-section .side-image .side-image-content button {
 
 .hover-tile-outer {
   background-color: white;
-  background-position: top;
-  background-size: cover;
+  background-position: center;
+  background-size: 125% 150%;
   border: 1px solid #ddd;
   cursor: pointer;
   height: 10em;
@@ -641,17 +652,68 @@ section#landing-more-info-section .side-image .side-image-content button {
   height: inherit;
   overflow: hidden;
   padding: 10px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 .hover-tile-outer .hover-tile-hidden {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hover-tile-outer .hover-tile-hidden p {
-  color: rgba(255, 255, 255, 0.7);
+  color: #333 !important;
   line-height: 1.5;
 }
-.hover-tile-outer .hover-tile-hidden h4 {
-  margin: 0 0 0.5em 0;
+.hover-tile-outer .hover-tile-hidden h3 {
+  font-size: 1.3em;
+  color: #000 !important;
+}
+.hover-tile-outer .hover-tile-hidden button, .hover-tile-outer .hover-tile-hidden input, .hover-tile-outer .hover-tile-hidden optgroup, .hover-tile-outer .hover-tile-hidden select, .hover-tile-outer .hover-tile-hidden textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.hover-tile-outer .hover-tile-hidden button {
+  overflow: visible;
+}
+.hover-tile-outer .hover-tile-hidden button, .hover-tile-outer .hover-tile-hidden select {
+  text-transform: none;
+}
+.hover-tile-outer .hover-tile-hidden button, .hover-tile-outer .hover-tile-hidden html input[type="button"], .hover-tile-outer .hover-tile-hidden input[type="reset"], .hover-tile-outer .hover-tile-hidden input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.hover-tile-outer .hover-tile-hidden button[disabled], .hover-tile-outer .hover-tile-hidden html input[disabled] {
+  cursor: default;
+}
+.hover-tile-outer .hover-tile-hidden button::-moz-focus-inner, .hover-tile-outer .hover-tile-hidden input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.hover-tile-outer .hover-tile-hidden button {
+  background-color: #1565c0;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-radius: 3px;
+  padding: 0.75em 1.5em;
+  margin-top: 20px;
 }
 
 /**

@@ -81,8 +81,13 @@ $video_link       = get_field( 'video_link' );
 
 			<div href="#" class="grid-item">
 				<div id="quote-box">
-					<p class="quote-text"><?php echo $main_quote; ?></p>
-					<h4><?php echo $quote_author ?></h4>
+					<?php if ( is_active_sidebar( 'blessed_are_widget_area' ) ) : ?>
+						<div id="testimonials-sidebard" class="primary-sidebar widget-area" role="complementary">
+							<?php dynamic_sidebar( 'blessed_are_widget_area' ); ?>
+						</div><!-- #primary-sidebar -->
+					<?php endif; ?>
+					<!-- <p class="quote-text"><?php echo $main_quote; ?></p>
+                    <h4><?php echo $quote_author ?></h4> -->
 				</div>
 				<div id="buy-rent-list-items">
 					<ul class="buy-rent-list-items">

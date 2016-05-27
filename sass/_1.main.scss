@@ -53,8 +53,8 @@ div.grid-items {
     height: 100%;
 
     #quote-box {
-      background-color: #824120;
-      border: solid 1px #5c2e1b;
+      background-color: rgba( 0, 0, 0, .1);
+      border: solid 1px #ffffff;
       padding: 10px 15px;
       color: white;
       margin-bottom: 20px;
@@ -70,6 +70,10 @@ div.grid-items {
         text-align: right;
       }
 
+    }
+
+    #quote-box * {
+      background: none;
     }
 
   }
@@ -94,6 +98,14 @@ div.grid-items {
   }
 }
 
+.easy_t_single_testimonial blockquote p span.testimonial-client {
+  color: white;
+}
+
+blockquote.easy_testimonial p {
+  text-align: center;
+}
+
 /**
  * Rental Buttons/Divs
  */
@@ -106,8 +118,8 @@ div#buy-rent-list-items {
 
     li.buy-rent-list-item{
 
-      background-color: #824120;
-      border: solid 1px #5c2e1b;
+      background-color: rgba( 0, 0, 0, .1);
+      border: solid 1px #ffffff;
       margin: 5px 0;
       padding: 10px;
 
@@ -232,8 +244,9 @@ section#landing-more-info-section {
 
   //background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-color: white;
-  background-position: top;
-  background-size: cover;
+  background-position: center;
+  //background-size: cover;
+  background-size: 125% 150%;
   border: 1px solid $base-border-color;
   cursor: pointer;
   height: $hover-tile-height;
@@ -259,19 +272,78 @@ section#landing-more-info-section {
     height: inherit;
     overflow: hidden;
     padding: $base-spacing;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.7s ease-in-out;
   }
 
   .hover-tile-hidden {
-    background: transparentize(#000, 0.5);
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     p {
-      color: transparentize(#fff, 0.3);
+      color: #333 !important;
       line-height: $base-line-height;
+
     }
 
-    h4 {
-      margin: 0 0 0.5em 0;
+    h3 {
+      font-size: 1.3em;
+      color: #000 !important;
+    }
+
+    button, input, optgroup, select, textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+    }
+
+    button {
+      overflow: visible;
+    }
+
+    button, select {
+      text-transform: none;
+    }
+
+    button, html input[type="button"], input[type="reset"], input[type="submit"] {
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+
+    button[disabled], html input[disabled] {
+      cursor: default;
+    }
+
+    button::-moz-focus-inner, input::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: rgb(21, 101, 192);
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1em;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 600;
+      line-height: 1;
+      text-decoration: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      border-width: 0px;
+      border-style: initial;
+      border-color: initial;
+      border-radius: 3px;
+      padding: 0.75em 1.5em;
+      margin-top: 20px;
     }
   }
 }
